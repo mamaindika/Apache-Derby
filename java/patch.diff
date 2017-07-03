@@ -1,0 +1,13 @@
+Index: drda/org/apache/derby/impl/drda/NetworkServerControlImpl.java
+===================================================================
+--- drda/org/apache/derby/impl/drda/NetworkServerControlImpl.java	(revision 1800176)
++++ drda/org/apache/derby/impl/drda/NetworkServerControlImpl.java	(working copy)
+@@ -2473,8 +2473,6 @@
+                 }
+ 
+                 // didn't find command
+-                consolePropertyMessage("DRDA_UnknownCommand.U", 
+-                    (String) commandArgs.firstElement());
+             }
+         } catch (Exception e) {
+             if (e.getMessage().equals(NetworkServerControlImpl.UNEXPECTED_ERR))
